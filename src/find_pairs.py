@@ -13,7 +13,7 @@ import torch
 sys.path.insert(0, "third_party/accelerated_features")
 from modules.xfeat import XFeat
 
-# Selected snow/query frames
+# Selected snow frames
 SELECTED_IDS = ["00000", "00036", "00073", "00133", "00691"]
 # Paths
 ROOT = Path("data/cmu_seasons/images_raw/images")
@@ -28,7 +28,7 @@ def sync_cuda(device):
         torch.cuda.synchronize()
 
 
-# Parse camera id from filename
+# Parse camera id
 def get_cam(path):
     m = re.search(r"_c([01])_", path.name)
     if not m:
