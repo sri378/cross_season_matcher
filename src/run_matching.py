@@ -9,7 +9,7 @@ import numpy as np
 import pandas as pd
 import torch
 
-# Local feature-matching dependency
+# feature-matching dependency
 sys.path.insert(0, "third_party/accelerated_features")
 from modules.xfeat import XFeat
 
