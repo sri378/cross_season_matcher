@@ -1,0 +1,9 @@
+{
+  "pairs_validated": 4,
+  "mean_manual_reprojection_error_px": 3.351280093193054,
+  "mean_manual_median_reprojection_error_px": 2.920779198408127,
+  "all_pairs_under_5px_robust_alignment": true,
+  "excluded_pair": "pair_005",
+  "exclusion_reason": "No reliable static man-made landmarks; dominated by trees, snow, and seasonal vehicle.",
+  "note": "Robust median landmark reprojection error is used as the geometric validation metric because this selected CMU-Seasons subset does not provide official pairwise ground-truth homographies."
+}

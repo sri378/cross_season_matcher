@@ -1,0 +1,16 @@
+{
+  "device": "cuda",
+  "features": "XFeat* semi-dense",
+  "top_k": 1200,
+  "max_side": 512,
+  "pairs_processed": 5,
+  "mean_inlier_ratio": 0.8831239764362735,
+  "mean_total_ms": 48.14355260004959,
+  "mean_load_ms": 14.290372200048296,
+  "mean_extract_ms": 32.84326519997194,
+  "mean_match_ms": 0.0,
+  "mean_homography_ms": 1.0099152000293543,
+  "statuses": {
+    "ok": 5
+  }
+}

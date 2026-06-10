@@ -1,0 +1,6 @@
+pair_id,summer_path,winter_path
+pair_001,data/summer/pair_001.jpg,data/winter/pair_001.jpg
+pair_002,data/summer/pair_002.jpg,data/winter/pair_002.jpg
+pair_003,data/summer/pair_003.jpg,data/winter/pair_003.jpg
+pair_004,data/summer/pair_004.jpg,data/winter/pair_004.jpg
+pair_005,data/summer/pair_005.jpg,data/winter/pair_005.jpg

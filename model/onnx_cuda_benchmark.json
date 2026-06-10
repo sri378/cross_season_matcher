@@ -1,0 +1,196 @@
+{
+  "onnx_model": "deployment/xfeat_net_static_480x640.onnx",
+  "input_shape": [
+    1,
+    3,
+    480,
+    640
+  ],
+  "available_providers": [
+    "TensorrtExecutionProvider",
+    "CUDAExecutionProvider",
+    "CPUExecutionProvider"
+  ],
+  "results": {
+    "cpu": {
+      "actual_providers": [
+        "CPUExecutionProvider"
+      ],
+      "mean_ms_across_images": 12.63821357798588,
+      "median_ms_across_images": 12.513369400062402,
+      "per_image": [
+        {
+          "image": "data/demo_pairs_snow_manual/summer/pair_001.jpg",
+          "mean_ms": 23.30204209995827,
+          "median_ms": 23.25553800005764,
+          "std_ms": 0.16985936479562058,
+          "min_ms": 23.085032000381034,
+          "max_ms": 23.740156999792816
+        },
+        {
+          "image": "data/demo_pairs_snow_manual/winter/pair_001.jpg",
+          "mean_ms": 14.918066000009276,
+          "median_ms": 14.762410000230375,
+          "std_ms": 0.894713724647886,
+          "min_ms": 14.103077000072517,
+          "max_ms": 20.32253200013656
+        },
+        {
+          "image": "data/demo_pairs_snow_manual/summer/pair_002.jpg",
+          "mean_ms": 15.332861179977044,
+          "median_ms": 14.532745000224168,
+          "std_ms": 1.2382600877883165,
+          "min_ms": 14.113627999904566,
+          "max_ms": 17.65143500006161
+        },
+        {
+          "image": "data/demo_pairs_snow_manual/winter/pair_002.jpg",
+          "mean_ms": 15.501691259978543,
+          "median_ms": 15.804113500053063,
+          "std_ms": 0.8173974529460218,
+          "min_ms": 14.109891999851243,
+          "max_ms": 17.718122999667685
+        },
+        {
+          "image": "data/demo_pairs_snow_manual/summer/pair_003.jpg",
+          "mean_ms": 14.585948819985788,
+          "median_ms": 14.373067999940758,
+          "std_ms": 0.5751003652627892,
+          "min_ms": 13.930903000073158,
+          "max_ms": 16.32488499990359
+        },
+        {
+          "image": "data/demo_pairs_snow_manual/winter/pair_003.jpg",
+          "mean_ms": 12.471305379986006,
+          "median_ms": 12.391250500058959,
+          "std_ms": 1.2445932370625585,
+          "min_ms": 10.835145999863016,
+          "max_ms": 16.658640000059677
+        },
+        {
+          "image": "data/demo_pairs_snow_manual/summer/pair_004.jpg",
+          "mean_ms": 9.676401639972028,
+          "median_ms": 9.492046999866943,
+          "std_ms": 1.0659620085788937,
+          "min_ms": 8.315514999594598,
+          "max_ms": 14.758928999981435
+        },
+        {
+          "image": "data/demo_pairs_snow_manual/winter/pair_004.jpg",
+          "mean_ms": 7.794824520005932,
+          "median_ms": 7.773709500042969,
+          "std_ms": 0.4651465130505766,
+          "min_ms": 6.953264999992825,
+          "max_ms": 9.329924000212486
+        },
+        {
+          "image": "data/demo_pairs_snow_manual/summer/pair_005.jpg",
+          "mean_ms": 6.7956745399897045,
+          "median_ms": 6.769971000039732,
+          "std_ms": 0.37356779737291784,
+          "min_ms": 6.07735900030093,
+          "max_ms": 8.024109999951179
+        },
+        {
+          "image": "data/demo_pairs_snow_manual/winter/pair_005.jpg",
+          "mean_ms": 6.003320339996208,
+          "median_ms": 5.978841500109411,
+          "std_ms": 0.18169101020167486,
+          "min_ms": 5.705691999992268,
+          "max_ms": 6.577941000159626
+        }
+      ]
+    },
+    "cuda": {
+      "actual_providers": [
+        "CUDAExecutionProvider",
+        "CPUExecutionProvider"
+      ],
+      "mean_ms_across_images": 2.7048624160070176,
+      "median_ms_across_images": 2.6580819000173506,
+      "per_image": [
+        {
+          "image": "data/demo_pairs_snow_manual/summer/pair_001.jpg",
+          "mean_ms": 2.940469720033434,
+          "median_ms": 2.9191429998718377,
+          "std_ms": 0.07391522568488681,
+          "min_ms": 2.819632999944588,
+          "max_ms": 3.1236710001394385
+        },
+        {
+          "image": "data/demo_pairs_snow_manual/winter/pair_001.jpg",
+          "mean_ms": 2.8602928199779853,
+          "median_ms": 2.8793219998988206,
+          "std_ms": 0.19721326923224405,
+          "min_ms": 2.620505000322737,
+          "max_ms": 3.7208469998404325
+        },
+        {
+          "image": "data/demo_pairs_snow_manual/summer/pair_002.jpg",
+          "mean_ms": 2.7063498200368485,
+          "median_ms": 2.6707605002229684,
+          "std_ms": 0.14549849071694576,
+          "min_ms": 2.557253999839304,
+          "max_ms": 3.402301000278385
+        },
+        {
+          "image": "data/demo_pairs_snow_manual/winter/pair_002.jpg",
+          "mean_ms": 2.695025160028308,
+          "median_ms": 2.6607809998040466,
+          "std_ms": 0.13788430719912542,
+          "min_ms": 2.557965000050899,
+          "max_ms": 3.333631000259629
+        },
+        {
+          "image": "data/demo_pairs_snow_manual/summer/pair_003.jpg",
+          "mean_ms": 2.561223839993545,
+          "median_ms": 2.5233594999463094,
+          "std_ms": 0.13793445138676724,
+          "min_ms": 2.4061260000962648,
+          "max_ms": 3.1982129999050812
+        },
+        {
+          "image": "data/demo_pairs_snow_manual/winter/pair_003.jpg",
+          "mean_ms": 2.5086826600363565,
+          "median_ms": 2.496944000085932,
+          "std_ms": 0.051931120243234936,
+          "min_ms": 2.4252729999716394,
+          "max_ms": 2.6679239999793936
+        },
+        {
+          "image": "data/demo_pairs_snow_manual/summer/pair_004.jpg",
+          "mean_ms": 2.6865715799885947,
+          "median_ms": 2.6253735002228495,
+          "std_ms": 0.2520153668199574,
+          "min_ms": 2.4457819999952335,
+          "max_ms": 3.896590999829641
+        },
+        {
+          "image": "data/demo_pairs_snow_manual/winter/pair_004.jpg",
+          "mean_ms": 2.702402459935911,
+          "median_ms": 2.627327000027435,
+          "std_ms": 0.26267981682332614,
+          "min_ms": 2.416867000192724,
+          "max_ms": 3.453148000062356
+        },
+        {
+          "image": "data/demo_pairs_snow_manual/summer/pair_005.jpg",
+          "mean_ms": 2.691763600023478,
+          "median_ms": 2.544715000112774,
+          "std_ms": 0.33810259122123915,
+          "min_ms": 2.402488999905472,
+          "max_ms": 3.9468370000577124
+        },
+        {
+          "image": "data/demo_pairs_snow_manual/winter/pair_005.jpg",
+          "mean_ms": 2.695842500015715,
+          "median_ms": 2.633093499980532,
+          "std_ms": 0.22675865618292942,
+          "min_ms": 2.451632999964204,
+          "max_ms": 3.532479000114108
+        }
+      ]
+    }
+  },
+  "speedup_cuda_vs_cpu": 4.672405333149149
+}
